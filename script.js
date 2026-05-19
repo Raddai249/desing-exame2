@@ -1,25 +1,5 @@
-function saluer() {
-  alert("Bienvenue sur le site d'examen !");
-}
-
-function getValeur(nom) {
-  const radios = document.getElementsByName(nom);
-  for (let r of radios) {
-    if (r.checked) return parseInt(r.value);
-  }
-  return 0;
-}
-
-function noter() {
-  const nom = document.getElementById("nomEtudiant").value || "Étudiant";
-
-  let total = 0;
-  total += getValeur("q1");
-  total += getValeur("q2");
-  total += getValeur("q3");
-
-  const note = Math.round((total / 3) * 20);
-
-  document.getElementById("score").innerText =
-    nom + " — Score: " + total + "/3 | Note: " + note + "/20";
+function showExtraInfo() {
+    document.getElementById("extraInfo").innerHTML =
+        "📌 Fun Fact: John F. Kennedy was the youngest elected U.S. president (43 years old).";
+    document.body.style.backgroundColor = "#d6e6ff";
 }

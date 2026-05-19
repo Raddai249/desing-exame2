@@ -1,72 +1,35 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Mini Site — Examen</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Lien CSS -->
-  <link rel="stylesheet" href="style.css">
+    <title>John F. Kennedy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Mini Site Web — Examen</h1>
-  <p>Formulaire noté automatique</p>
-</header>
+    <h1>John F. Kennedy</h1>
+    <h2>35th President of the United States</h2>
 
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#apropos">À propos</a>
-  <a href="#formulaire">Formulaire</a>
-</nav>
+    <p>
+        <strong>John Fitzgerald Kennedy</strong> was born on <strong>May 29, 1917</strong> and died on 
+        <strong>November 22, 1963</strong>. He became the 35th President of the United States in 1961.
+        Kennedy is remembered for his inspiring leadership and his famous quote:
+        <em>"Ask not what your country can do for you — ask what you can do for your country."</em>
+    </p>
 
-<section id="accueil">
-  <div class="card">
-    <h2>Accueil</h2>
-    <p>Bienvenue sur mon site d'examen.</p>
-    <button onclick="saluer()">Cliquer ici</button>
-  </div>
-</section>
+    <p>
+        He played an important role during the <strong>Cuban Missile Crisis</strong> in 1962 and supported the 
+        <em>Civil Rights Movement</em>. His presidency gave hope to many Americans and made history during the Cold War.
+    </p>
 
-<section id="apropos">
-  <div class="card">
-    <h2>À propos</h2>
-    <p>Nom : __________</p>
-    <p>Classe : __________</p>
-  </div>
-</section>
+    <button onclick="showExtraInfo()">Click to Learn More</button>
 
-<section id="formulaire">
-  <div class="card">
-    <h2>Formulaire noté</h2>
+    <p id="extraInfo"></p>
 
-    <label>Nom étudiant :</label>
-    <input type="text" id="nomEtudiant">
+    <hr>
 
-    <h3>1. HTML signifie :</h3>
-    <label><input type="radio" name="q1" value="0"> Home Tool Markup Language</label><br>
-    <label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label><br>
-    <label><input type="radio" name="q1" value="0"> Hyperlinks Text Mode Language</label>
+    <small>&copy; 2026 Biography of John F. Kennedy</small>
 
-    <h3>2. CSS sert à :</h3>
-    <label><input type="radio" name="q2" value="1"> Styliser la page</label><br>
-    <label><input type="radio" name="q2" value="0"> Programmer serveur</label>
-
-    <h3>3. JavaScript permet :</h3>
-    <label><input type="radio" name="q3" value="1"> Interactivité</label><br>
-    <label><input type="radio" name="q3" value="0"> Seulement texte</label>
-
-    <br><br>
-    <button onclick="noter()">Calculer la note</button>
-
-    <div class="score-box" id="score"></div>
-  </div>
-</section>
-
-<!-- Lien JavaScript -->
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
